@@ -1,2 +1,2 @@
 # my-portfolio
-My professional portfolio website showcasing my skills in Web Development and Web Writing
+Personal portfolio website of an Aspiring Software Developer and Web Writer, showcasing front-end projects and technical skills.
