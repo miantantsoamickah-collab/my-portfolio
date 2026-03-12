@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <!--<div class="logo">Mickah<span>.dev</span></div>-->
+            <ul class="nav-links">
+             <li><a href="#hero">Home</a></li>
+             <li><a href="#about">About</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#projects">Projects</a></li>
+             <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+     <img src="mickah.png" alt="Mickah Software Developer" width="300">
+       <h1>Hi, I am Mickah</h1>
+       <p><i>Aspiring Software Developer & Web Writer</i></p>
+    </section>
+    <section id="about">
+        <h2>About me</h2>
+        <p>I am a dedicated <strong>Software Developer</strong> and <strong>Web Writer</strong> 
+        based in Ambatondrazaka. With a Baccalaureate in <strong>O.S.E</strong> and professional training 
+        in <strong>Office Computing</strong>, I bridge the gap between technical efficiency and 
+        creative design.</p>
+        I am proficient in <strong>English (B2 Upper-Intermediate)</strong> and Malagasy. 
+        Currently, I contribute my skills as a voice talent and guest speaker at 
+        <strong>"English Flow with Tinah"</strong>, where I help others improve their language skills.</p>
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Figma (UI/UX Design)</li>
+            <li>Office Computing</li>
+        </ul>
+    </section>
+    <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+        <h3>Ambatondrazaka Tourism Website</h3>
+        <p>A regional website designed to promote tourism in the Ambatondrazaka region using HTML, CSS, and Figma.</p>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out to me for collaborations or inquiries:</p>
+    
+    <div class="social-links">
+        <a href="mailto:miantantsoamickah@gmail.com?subject=Inquiry from Portfolio"><i class="fas fa-envelope"></i> Email</a>
+        
+        <a href="https://www.linkedin.com/in/miantantsoa-mickah-andriambololoniaina-9bb407391/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        
+        <a href="https://www.facebook.com/mickah.miantantsoa2004" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        
+        <a href="https://www.instagram.com/mickahandriam" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        
+        <a href="https://www.tiktok.com/@mickahmiantantsoa" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-content">
+        <p>&copy; <span id="year"></span> <strong>Mickah</strong>. All Rights Reserved.</p>
+        <p>Designed and Coded with <i class="fas fa-heart"></i> in Ambatondrazaka.</p>
+        
+        <a href="#hero" class="back-to-top">Back to top ↑</a>
+    </div>
+</footer>
+   <script>
+    const d = new Date();
+    
+    // 1. Ny anaran'ny volana amin'ny teny Anglisy
+    const months = ["January", "February", "March", "April", "May", "June", 
+                    "July", "August", "September", "October", "November", "December"];
+    
+    // 2. Ambambany ny volana sy ny taona
+    const currentMonth = months[d.getMonth()];
+    const currentYear = d.getFullYear();
+    
+    // 3. Apetraka ao amin'ilay HTML
+    document.getElementById('year').textContent = currentMonth + " " + currentYear;
+</script>
+</body>
+</html>

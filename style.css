@@ -1,0 +1,157 @@
+header{
+    background-color: #0e2967;
+}
+body {
+    /* Safidy voalohany (Dark Mode) no arosoko */
+    background-color: #0b1120; 
+    color: #cbd5e1; /* Loko gris-manga mazava ho an'ny soratra */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Ireo section hafa (Skills, Projects) */
+section {
+    padding: 60px 10%;
+}
+
+/* Mba tsy ho maty loatra ny pejy, asiana "accent color" */
+strong, h2 {
+    color: #38bdf8; /* Manga mazava (Sky Blue) ho an'ny teny manan-danja */
+}
+
+#hero {
+    /* Fifangaroan'ny manga maizina sy ny mainty avy any ambony mianambany */
+    background: linear-gradient(135deg, #001f3f 0%, #0e2967 100%);
+    padding: 90px 10px;
+    text-align: center;
+    color: white; /* Mba ho fotsy ny soratra amboniny */
+}
+
+.nav-links {
+    position: fixed;       /* Mba hiraikitra eo ambony foana */
+    top: 0;                /* Rakitra eo amin'ny tendrony ambony */
+    left: 0;               /* Rakitra eo amin'ny sisiny ankavia */
+    width: 100%;           /* Manenjika ny sakan'ny écran manontolo */
+    height: 70px;          /* Ny hahavon'ny nav bar-nao */
+    
+    background-color: #02043a; /* Loko fotsy na ilay Blue Dark tianao */
+    display: flex;
+    justify-content: space-between; /* Ny Logo ankavia, ny Menu ankavanana */
+    align-items: center;
+    margin: 0;
+    padding: 0;         /* Elanelana kely amin'ny sisiny mba tsy hiraikitra loatra */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Shadow kely mba hisaraka amin'ny body */
+    /*z-index: 1000;         /* Mba ho ambonin'ny sary sy ny soratra rehetra foana izy */
+    box-sizing: border-box; /* Ity no miantoka fa tsy hivoaka écran ny width 100% */
+    list-style: none;
+    font-size: large;
+}
+
+.nav-links li {
+    /* Tsy mila asiana inona isaky ny <li> */
+}
+
+.nav-links a {
+    text-decoration: none;  /* Manala an'ilay tsipika ambany amin'ny soratra */
+    padding: 10px 20px;
+    display: block;
+    color: #ffffff;         /* Soratra fotsy */
+    background-color: #031235; /* Mitovy amin'ilay "Gris Dark" ao amin'ny About Me */
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 15px;
+}
+
+/* Hover effect: Miova kely ny loko rehefa andalovan'ny mouse */
+.nav-links a:hover {
+    background-color: #490445fe; /* Gris mazava kely noho ilay background */
+}
+#hero img:hover {
+    transform: scale(1-1); /* Miakatra kely izy rehefa andalovan'ny mouse */
+    box-shadow: 0 0 40px rgba(0, 116, 217, 0.6);
+}
+
+img {
+  border-radius: 50%; /* Raha te hanao azy boribory */
+  border: 1px solid #526888; /* Loko manga tahaka ilay lobaka ho an'ny border */
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1); /* Mba hisy "shadow" kely hoatry ny mitsinkafona */
+}
+
+
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap; /* Mba hidina ho azy raha tery ny finday */
+    gap: 15px;       /* Elanelana eo anelanelan'ny bokotra */
+    padding: 20px 0;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 50px; /* Ity no mahatonga azy ho boribory be tahaka ny Opera */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;       /* Soratra fotsy */
+    background-color: #ff1b2d; /* Loko mena (tahaka ny Opera Mini) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow kely */
+    transition: transform 0.2s, background-color 0.2s;
+    min-width: 150px;
+    text-align: center;
+    font-size: large;
+}
+
+/* Rehefa andalovan'ny "mouse" (Hover effect) */
+.social-links a:hover {
+    transform: scale(1.05); /* Mihalehibe kely */
+    background-color: #cc0000; /* Loko mena maizina kely */
+}
+
+/* Raha tianao hosolona ny loko isaky ny tambajotra */
+.social-links a[href*="linkedin"] { background-color: #0077b5; }
+.social-links a[href*="facebook"] { background-color: #1877f2; }
+.social-links a[href*="instagram"] { background-color: #e4405f; }
+.social-links a[href*="tiktok"] { background-color: #000000; }
+.social-links a[href*="mailto"] { background-color: #34a853; }
+
+.main-footer{
+    background-color: #001f3f;
+    margin-bottom: 0 !important; /* Terena hikasoka amin'ny farany ambany */
+    padding-bottom: 40px; /* Ity no mifehy ny elanelana ao anatiny (haavo) */
+    width: 100%;
+    display: block;
+}
+.footer-content{
+    margin-left: 50px;
+}
+
+.main-footer #hero a:link{
+    color: #cc0000;
+}
+
+.main-footer a:hover{
+    color: #2c15bf;
+}
+
+.main-footer a:active{
+    color:#cbd5e1;
+}
+.back-to-top {
+    position: fixed;      /* Mba hiraikitra eo amin'ny écran */
+    bottom: 30px;         /* Elanelana avy any ambany */
+    right: 30px;          /* Elanelana avy any ankavanana */
+    background-color: #ff1b2d; /* Loko mena tahaka ny Opera Mini */
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50%;   /* Hatao boribory tsara */
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;        /* Mba ho ambonin'ny zavatra rehetra */
+    transition: 0.3s ease;
+    margin-bottom: 0;
+}
